@@ -140,6 +140,8 @@ main h3:not(.cal_entry h3) {
   margin: 4rem;
 }
 
+
+
 header nav {
   display: flex;
   border-bottom: 2px solid  rgba(29, 32, 43, 1);
