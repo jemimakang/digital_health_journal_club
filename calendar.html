@@ -8,7 +8,7 @@
     <meta name="author" content="Cameron Campbell">
     <meta name="description" content="Homepage of the University of Melbourne Digital Health Journal Club">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!-- This is the title that will get rendered to the tab in the browswer, important for assignment! -->
+    <!-- This is the title that will get rendered to the tab in the browswer,  important for assignment! -->
     <title>Digital Health Journal Club</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -52,57 +52,82 @@
 
         <!-- ---------------------------------------MAIN CONTENT----------------------------------------- -->
 
-        <section id="calendar">
+        <section>
 
         <!-- ---------------------------------CALENDAR ENTRY START COPY----------------------------------- -->
 
-        <h5>Upcoming Events</h5>
+        <ol class="cal_entry">
 
-    
+            <!-- detials not including room -->
+            <li>
+                <!-- DATE -->
+                <h3>06 JUNE</h3>
+
+                <!-- TIME (12 hour) -->
+                <h3>11:00am</h3>
+            </li>
+
+            <!-- paper / topic of meeting -->
+            <li class="cal_info">
+                <h2>First Meeting</h2>
+                    
+                <p>Get to know eachother/plan schedule.</p>
+            </li>
+
+            <!-- details including room and paper topic -->
+            <li>
+                <!-- ROOM -->
+                <p>3209 (Manchester Room), Level 3, Melbourne Connect</p>
+
+                <!-- SLIDES / PDF -->
+                <a href="#"><h3><small>slides.pdf</small></h3></a>
+            </li>
+        </ol> 
+
         <!-- ---------------------------------CALENDAR ENTRY END COPY----------------------------------- -->
 
         <ol class="cal_entry">
 
             <!-- detials not including room -->
-            <li class="date-info">
+            <li>
                 <!-- DATE -->
-                <h3 class="date">18 JULY</h3>
+                <h3>20 JUNE</h3>
 
                 <!-- TIME (12 hour) -->
-                <h3 class="time">11:00am</h3>
+                <h3>11:00am</h3>
             </li>
 
             <!-- paper / topic of meeting -->
             <li class="cal_info">
-                <h2>Presenter: Liuliu Chen</h2>
+                <h2>Presenter: Abir Naskar</h2>
                     
-                <p>Paper: Protocol-Based Computer Reminders, the Quality of Care and the Non-Perfectability of Man. <a href="https://www.nejm.org/doi/full/10.1056/NEJM197612092952405"><small>Link here</small></a></p>
+                <p>Paper: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5051581/"><small>click here</small></a></p>
             </li>
 
             <!-- details including room and paper topic -->
-            <li class="cal_room">
+            <li>
                 <!-- ROOM -->
-                <p>Location: 3209 (Manchester Room), Level 3, Melbourne Connect</p>
+                <p>Location: 3209, Level 3, Melbourne Connect</p>
 
                 <!-- SLIDES / PDF -->
-                <a class="cal_link" href="#"><h3>slides.pdf</h3></a>
+                <a href="#"><h3>slides.pdf</h3></a>
             </li>
         </ol>
 
         <ol class="cal_entry">
 
             <!-- detials not including room -->
-            <li class="date-info">
+            <li class="cal_date">
                 <!-- DATE -->
-                <h3 class="date">1 AUGUST</h3>
+                <h3>04 JULY</h3>
 
                 <!-- TIME (12 hour) -->
-                <h3 class="time">11:00am</h3>
+                <h3>11:00am</h3>
             </li>
 
             <!-- paper / topic of meeting -->
             <li class="cal_info">
-                <h2>Presenter: Pengfei Yin </h2>
+                <h2>Presenter: Jemima Kang</h2>
                     
                 <p>Paper: TBA.</p>
             </li>
@@ -117,26 +142,53 @@
             </li>
         </ol>
 
-        
+
+        <ol class="cal_entry">
+
+            <!-- detials not including room -->
+            <li class="cal_date">
+                <!-- DATE -->
+                <h3>18 JULY</h3>
+
+                <!-- TIME (12 hour) -->
+                <h3>11:00am</h3>
+            </li>
+
+            <!-- paper / topic of meeting -->
+            <li class="cal_info">
+                <h2>Presenter: Liuliu Chen</h2>
+                    
+                <p>Paper: TBA.</p>
+            </li>
+
+            <!-- details including room and paper topic -->
+            <li class="cal_room">
+                <!-- ROOM -->
+                <p>Location: 3209, Level 3, Melbourne Connect</p>
+
+                <!-- SLIDES / PDF -->
+                <a class="cal_link" href="#"><h3>slides.pdf</h3></a>
+            </li>
+        </ol>
         </section>
 
         <!-- ---------------------------------add list of previous presentations (potentially) ----------------------------------- -->
         <p id="calendar_scroll_info">scroll for more →</p>
-<article>
+
         <h3>Potential Papers ↓</h3>
-        <p> → Explainability for artificial intelligence in healthcare: a multidisciplinary perspective. <a href="https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-020-01332-6/"><small>Link</small></a><br>
-            → Artificial Paranoia. <a href="https://redirect.cs.umbc.edu/courses/graduate/671/fall13/resources/colby_71.pdf"><small>Link</small></a><br>
-            → (DONE) Diagnosing community-acquired pneumonia with a Bayesian network. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2232064/"><small>Link</small></a><br>
-            → Some unintended consequences of clinical decision support systems. <a href="https://pubmed.ncbi.nlm.nih.gov/18693791/"><small>Link</small></a><br>
-            → (DONE) Who is afraid of black box algorithms? On the epistemological and ethical basis of trust in medical AI. <a href="https://pubmed.ncbi.nlm.nih.gov/33737318/"><small>Link</small></a><br>
-            → The efficacy of diagnostic imaging. <a href="https://pubmed.ncbi.nlm.nih.gov/1907710/"><small>Link</small></a><br>
-            → A Harmonized Data Quality Assessment Terminology and Framework for the Secondary Use of Electronic Health Record Data. <a href="https://pubmed.ncbi.nlm.nih.gov/27713905/"><small>Link</small></a><br>
-            → MD computing: computers in medical practice. <a href="https://www.cs.tufts.edu/comp/150AIH/pdf/LedleyLu59.pdf"><small>Link</small></a><br>
-            → Artificial intelligence and black‐box medical decisions: accuracy versus explainability. <a href="https://pubmed.ncbi.nlm.nih.gov/30790315/"><small>Link</small></a><br>
-            → (DONE) Protocol-based computer reminders, the quality of care and the non-perfectability of man. <a href="https://pubmed.ncbi.nlm.nih.gov/988482/"><small>Link</small></a><br>
-            → Medical records that guide and teach. <a href="http://faculty.washington.edu/tpayne/Upload/NEJM%20-%20Medical%20records%20that%20guide%20and%20teach%20(Weed%20-%201968).pdf"><small>Link</small></a></p><br>
+        <p> Explainability for artificial intelligence in healthcare: a multidisciplinary perspective. <a href="https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-020-01332-6/"><small>Link</small></a></p><br>
+        <p> Artificial Paranoia. <a href="https://redirect.cs.umbc.edu/courses/graduate/671/fall13/resources/colby_71.pdf"><small>Link</small></a></p><br>
+        <p> Diagnosing community-acquired pneumonia with a Bayesian network. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2232064/"><small>Link</small></a></p><br>
+        <p> Some unintended consequences of clinical decision support systems. <a href="https://pubmed.ncbi.nlm.nih.gov/18693791/"><small>Link</small></a></p><br>
+        <p> Who is afraid of black box algorithms? On the epistemological and ethical basis of trust in medical AI. <a href="https://pubmed.ncbi.nlm.nih.gov/33737318/"><small>Link</small></a></p><br>
+        <p> The efficacy of diagnostic imaging. <a href="https://pubmed.ncbi.nlm.nih.gov/1907710/"><small>Link</small></a></p><br>
+        <p> A Harmonized Data Quality Assessment Terminology and Framework for the Secondary Use of Electronic Health Record Data. <a href="https://pubmed.ncbi.nlm.nih.gov/27713905/"><small>Link</small></a></p><br>
+        <p> MD computing: computers in medical practice. <a href="https://www.cs.tufts.edu/comp/150AIH/pdf/LedleyLu59.pdf"><small>Link</small></a></p><br>
+        <p> Artificial intelligence and black‐box medical decisions: accuracy versus explainability. <a href="https://pubmed.ncbi.nlm.nih.gov/30790315/"><small>Link</small></a></p><br>
+        <p> Protocol-based computer reminders, the quality of care and the non-perfectability of man. <a href="https://pubmed.ncbi.nlm.nih.gov/988482/"><small>Link</small></a></p><br>
+        <p> Medical records that guide and teach. <a href="http://faculty.washington.edu/tpayne/Upload/NEJM%20-%20Medical%20records%20that%20guide%20and%20teach%20(Weed%20-%201968).pdf"><small>Link</small></a></p><br>
         
-    </article>
+
     </main>
 
     <footer>
