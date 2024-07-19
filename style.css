@@ -74,6 +74,10 @@ body {
 
 /* ----------------------------------------------------------------------------------- fonts -- */
 
+/* header nav {
+  background-color: rgb(248, 248, 248);
+} */
+
 header nav ul li a,
 #breadcrumb,
 footer {
@@ -102,7 +106,6 @@ header a {
 
 h1,
 h2,
-h5,
 article ol {
     font-family: "lores-21-serif", sans-serif;
     font-weight: 400;
@@ -139,8 +142,6 @@ main h3:not(.cal_entry h3) {
   padding: 1.5rem;
   margin: 4rem;
 }
-
-
 
 header nav {
   display: flex;
@@ -183,10 +184,14 @@ header nav ul li {
   flex-wrap: wrap;
 }
 
+/* main nav ol:not(:last-child) {
+  list-style-type: none;
+  text-decoration: none;
+} */
+
 main nav ol li:not(:last-child)::after {
   content: "→";
   padding-right: 0.7rem;
-  text-decoration: none;
 }
 
 footer {
@@ -346,7 +351,24 @@ footer p {
   display: none;
 }
 
+/* cooked layout css for full height viewing in mobile but it gets rid of the ability to scroll
+
+body {
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+
 @media(min-width: 500px) {
+
+  main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 
   article {
     text-align: left;
@@ -371,10 +393,18 @@ footer p {
 /* This @media query applies to tablets */
 @media(min-width: 620px) {
 
+  main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
   article {
     text-align: left;
     max-width: fit-content;
   }
+
 
 }
 
@@ -393,6 +423,13 @@ footer p {
     margin-right: auto;
   }
 
+  main section {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
   #calendar_scroll_info {
     display: block;
     margin-left: auto;
@@ -408,54 +445,12 @@ footer p {
     background-color: rgb(248, 248, 248);
     border: 2px solid rgba(29, 32, 43, 1);
 
-  }#calendar {
-    display: flex;
-    flex-wrap: nowrap;
-    /* height: 50vh; */
-    overflow: auto;
   }
 
   .cal_entry {
-    /* display: block; */
-    margin: 0;
-    /* height: 50vh; */
-    /* width: auto; */
-    min-width: fit-content;
-    margin: 3rem;
+    max-height: 60vh;
+    min-width: 20rem;
+    width:max-content;
+    margin: 2rem;
   }
-
-  .cal_info h2 {
-    max-inline-size: 30rem;
-    margin-top: -2rem;
-    /* margin-bottom: -3rem; */
-  }
-
-  /* .cal_info p {
-    max-inline-size: 30rem;
-
-  } */
-
-  .cal_entry a h3 {
-    position: relative;
-    text-align: right;
-    top: 3rem;
-    background-color: rgb(248, 248, 248);
-  }
-
-  .date-info {
-    position: relative;
-    top: -3rem;
-    left: -3rem;
-
-    display: flex;
-    flex-direction: column;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    background-color: rgb(248, 248, 248);
-    border: 2px solid rgba(29, 32, 43, 1);
-    width: fit-content;
-  }
-
 }
